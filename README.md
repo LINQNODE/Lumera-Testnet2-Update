@@ -15,7 +15,7 @@ Only apply these steps AFTER 2025-07-02T16:00:00Z! If you are not a genesis vali
 - [Lumera Twitter](https://x.com/lumeraprotocol)
 - [Lumera Website](https://lumera.io)
 - [Lumera Github](https://github.com/LumeraProtocol/)
-- [Blockchain Explorer](https://explorer.linqnode.com/)
+- [Blockchain Explorer](https://explorer.linqnode.com/lumera-testnet)
 
 ---
 
