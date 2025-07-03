@@ -22,7 +22,6 @@ Only apply these steps AFTER 2025-07-02T16:00:00Z! If you are not a genesis vali
 Step 1: Download Necessary Files (NO time limit - you can download these in advance)
 
 
-  
 ### ✅ Change to the home directory:
 ```
 cd $HOME
@@ -50,11 +49,13 @@ wget https://raw.githubusercontent.com/LumeraProtocol/lumera-networks/refs/heads
 
 Step 2: Stop the Node ⏹️
 
+
 ```
 sudo systemctl stop lumerad
 ```
 
 Step 3: Clear Chain Data 🗑️
+
 
 CAUTION: This process will delete your testnet-1 data!
 
@@ -63,6 +64,7 @@ lumerad tendermint unsafe-reset-all rm -rf ~/.lumera/wasm
 ```
 
 Step 4: Update Binary and Network Files with Cosmovisor 🔄
+
 
 ### ✅ Create a directory for the new binary:
 ```
@@ -97,7 +99,6 @@ Step 5: Update Chain ID and Peers 🆔
 lumerad config set client chain-id lumera-testnet-2
 ```
 
-Update Seeds and Persistent Peers
 
 ### Update Seeds and Persistent Peers:
 ```
@@ -106,7 +107,9 @@ URL="https://lumera-rpc.coinsspor.com/net_info" response=$(curl -s $URL) PEERS=$
 
 Thanks Coinsspor 
 
+
 Step 6: Start the Node 🚀
+
 
 ### ✅ Step 6: Start the Node 🚀:
 ```
@@ -114,6 +117,8 @@ lsudo systemctl start lumerad
 ```
 
 Step 7: Check the Logs 📊
+
+
 ### ✅ Check the node status:
 ```
 sudo journalctl -fu lumerad -o cat
