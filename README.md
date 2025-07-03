@@ -172,3 +172,25 @@ lumerad tx staking create-validator $HOME/validator.json --chain-id=lumera-testn
 lumerad tx staking delegate $(lumerad keys show $LUMERA_WALLET --bech val -a) 1000000ulume --from $LUMERA_WALLET --chain-id lumera-testnet-2 --gas-prices=0.025ulume --gas-adjustment=1.5 --gas=auto -y 
 ```
 
+## ⚠️ Important Reminders
+
+**Timing**: Only perform these steps after 2025-07-02T16:00:00Z.
+
+**Data Loss**: This process will completely erase your testnet-1 data.
+
+**Wallet**: Make sure you have backed up your wallet seed phrase.
+
+**Validator**: If you are a validator, check your validator status once the sync is complete.
+
+
+## 🎯 Post-Update
+
+After the update is complete:
+
+Your node will connect to testnet-2.
+
+It will start syncing from the new genesis block.
+
+Your old validator keys will remain valid (as long as your wallet seed phrase is the same).
+
+
